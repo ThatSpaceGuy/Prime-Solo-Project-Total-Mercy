@@ -15,13 +15,13 @@ myApp.controller( 'navController', [ '$scope','$location', function( $scope, $lo
   $scope.linkList =[
     {route:'home',text:'Home'},
     {route:'dashboard',text:'Dashboard'},
-    {route:'donate',text:'Map'}
+    {route:'map',text:'Map'}
 
   ];
 
   // log out url, from Auth0
   // $scope.logOutUrl = 'https://thatspaceguy.auth0.com/v2/logout?returnTo=http%3A%2F%2Flocalhost%3A3000/dashboard';
-  $scope.logOutUrl = 'https://accounts.google.com/logout?&continue=https://tranquil-hamlet-55100.herokuapp.com/';
+  $scope.logOutUrl = 'https://accounts.google.com/logout?continue=https://appengine.google.com/_ah/logout?continue=https://tranquil-hamlet-55100.herokuapp.com/';
 
   $scope.logIn = function(){
     // call out logIn function from auth0.js
@@ -78,9 +78,9 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
     templateUrl: '/views/partials/dashboard.html',
     controller: 'dashController'
   }).
-  when('/donate', {
-    templateUrl: '/views/partials/donate.html',
-    controller: 'donateController'
+  when('/map', {
+    templateUrl: '/views/partials/map.html',
+    controller: 'mapController'
   }).
   otherwise({
     redirectTo: '/home'

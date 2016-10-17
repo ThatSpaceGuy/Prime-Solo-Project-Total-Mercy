@@ -1,4 +1,4 @@
-myApp.controller('donateController', ['$scope', function($scope){
-  console.log('Donate Controller');
-  $scope.currentView = 'donate';
+myApp.controller('mapController', ['$scope', function($scope){
+  console.log('map Controller');
+  $scope.currentView = 'map';
 }]);
