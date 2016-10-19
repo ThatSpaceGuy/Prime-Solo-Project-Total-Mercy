@@ -16,11 +16,11 @@
 // }
 
 body {
-	background-image: url('../media/the_one_who_showed_mercy (1).jpg');
+	// background-image: url('../media/the_one_who_showed_mercy (1).jpg');
 	background-color: black;
-	background-position: top center;
-	background-size: 75%;
-	background-repeat: no-repeat;
+	// background-position: top center;
+	// background-size: 60%;
+	// background-repeat: no-repeat;
 	color: black;
 	text-align: center;
 }
@@ -31,9 +31,14 @@ button {
 }
 
 a {
-	color: rgb(20,20,255);
+	color: rgb(10,10,175);
 }
 
+ul {
+	display: inline-block;
+	text-align: left;
+
+}
 #navBar {
 	margin: 20px 0 0 0;
 	background-color: rgba(150,150,150,.90);
@@ -45,15 +50,92 @@ a {
 	padding-bottom: 10px;
 }
 
-#introBox, #dashWelcome, #personalStatsBox, #groupStatsBox, #groupMessageBox  {
-	background-color: rgba(255,255,255,.75);
+ #dashWelcome, #personalStatsBox, #groupStatsBox, #groupMessageBox  {
+	background-color: rgba(255,255,255,.50);
 	border-radius: 10px;
 }
 
-#whoBox, #whatBox, #whenBox, #whyBox, #howBox  {
-	background-color: rgba(255,255,255,.75);
+#introBox {
+	background: url('../media/the_one_who_showed_mercy (1).jpg');
+	background-position: top center;
+	background-size: auto;
+	background-repeat: no-repeat;
+	width: 422px;
+	height: 638px;
 	border-radius: 10px;
 	margin-bottom: 10px;
+	display: inline-block;
+}
+#whoBox  {
+	background: url('../media/hour.png');
+	background-position: top center;
+	background-size: 110%;
+	background-repeat: no-repeat;
+	width: auto;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+#whatBox, #whenBox, #whyBox, #howBox  {
+	background: url('../media/Nehemiah_MR-copy-panorama.jpg');
+	background-position: top center;
+	background-size: 110%;
+	background-repeat: no-repeat;
+	width: auto;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+#whenBox  {
+	background: url('../media/Disclaimer.png');
+	background-position: top center;
+	background-size: 65%;
+	background-repeat: no-repeat;
+	width: auto;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+#whyBox {
+	background: url('../media/Why.png');
+	background-position: top center;
+	background-size: 125%;
+	background-repeat: no-repeat;
+	width: auto;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+#howBox  {
+	background: url('../media/EveryTribe.jpg');
+	background-position: top center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: auto;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.textDiv {
+	// position: relative;
+	// top: 50%;
+	// transform: translateY(-50%);
+	background-color: rgba(255,255,255,.30);
+	width:inherit;
+	height: inherit;
+	color: black;
+	border-radius: 10px;
+	margin-top: -20px;
+
+}
+
+#whoRow, #whatRow, #whenRow, #whyRow, #howRow  {
+	// background-image: url('');
 }
 
 #introBox{
@@ -94,4 +176,8 @@ a {
 
 .black {
 	color: black;
+}
+
+.container {
+
 }

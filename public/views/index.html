@@ -20,7 +20,9 @@
 </head>
 <body>
 
-	<div ng-controller="navController" class="container">
+	<div ng-controller="navController">
+		<div class="container">
+
 		<div id="navBar">
 			<h1>The Agents of Total Mercy</h1>
 			<p>
@@ -31,6 +33,7 @@
 				<a ng-href="{{logOutUrl}}{{currentView}}" ng-if="loggedIn === true" ng-click="logOut()">Log Out</a>
 			</p>
 		</div>
+	</div>
 
 		<main ng-view autoscroll="true">
 			<!-- NG-routing shows up here -->
